@@ -1,0 +1,97 @@
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  display: flex;
+}
+
+main {
+  padding: 20px;
+}
+
+.sidebar {
+  position: relative;
+  width: 200px;
+  height: 100vh;
+  padding: 20px;
+  background-color: #eee;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-80%);
+}
+
+.sidebar-open {
+  height: 100vh;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+  width: 200px;
+  padding: 20px;
+  background-color: #eee;
+}
+
+#sidebtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+li:hover {
+  background-color: #ddd;
+  color: #333;
+  padding-left: 5px;
+}
+
+
+
+/*다크모드 버튼*/
+.darkdiv {
+  margin-top: 540px;
+  display: flex;
+}
+.darkMode {
+  position: relative;
+  width: 60px;
+  height: 24px;
+  background-color: #c4c4c4;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+  padding: 2px;
+}
+.darkMode-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 34px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 8px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #699fc4;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.25);
+  padding: 8px 12px;
+  border-radius: 3px;
+  position: absolute;
+  transition: all 0.2s ease;
+  left: 28px;
+}
+.disabled {
+  background-color: #707070;
+  left: 2px;
+}
+#darkmodetext {
+  margin-left: 15px;
+  padding-right: 5px;
+  font-weight: bold;
+  font-size: small;
+}
