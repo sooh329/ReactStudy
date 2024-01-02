@@ -1,0 +1,6 @@
+nav {
+  a{
+    font-size: 1.5em;
+    &.active{background-color: #ccc;}
+  }
+}
